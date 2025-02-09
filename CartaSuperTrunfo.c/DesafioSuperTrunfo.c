@@ -1,19 +1,25 @@
 #include <stdio.h>
 
 int main(){
+    //Variaveis para amazenar os nomes das cidade.
+     char estado;
+     int codigo_cidade; //Exemplo 1,2,3,4 ou A01,A02...
+     char cidade [60]; //Nome da cidade;
+     float populacao;
+     float area;
+     float pib;
+     float pontos_turisticos;
 
-    printf("Brasil\n");
+     printf("Digite o nome do estado: \n");
+     scanf(" %s/n", &estado);
 
-    int codigo = 01;
-    char nome[20] = "Brasil";
-    float populacao = 216.4;
-    float area = 8.510000;
-    float pib = 2.174000000000;
-    float pontosturisticos = 0;
+     printf("Digite o codigo da carta: \n");
+     scanf(" %d\n", &codigo_cidade);
 
-    printf(" Qual o codigo da cidade ?\n");
-    scanf(" %d\n", &codigo);
-    scanf("resposta correta 01\n");
+
+   
+
+    
 
    
 
