@@ -1,45 +1,37 @@
 #include <stdio.h>
 
 int main(){
-
-    //Variaveis com nome do estado, cidade, codigo, are, pib...
-    int numero,codigo; //Numero carta 1,2,3,4.
-    char nome[130]; //Nome do estado e cidade;
+     //Variaveis com nome do estado, cidade, codigo, are, pib...
+    int numero;
+    int codigo; //Numero carta 1,2,3,4.
+    char nome[60]; //Nome do estado e cidade;
+    char estado[60];
     float pib;   //População;
     float area;  //Area km2;
-    float pontos_turisticos;
+    int pontos_turisticos; // pontos turisticos
+    //Printf -> Comando para ser impresso na tela e scanf para ler dados do teclado e atribui as variavei.
+    printf("Numero da carta:\n");
+    scanf(" %f\n", &numero);  
 
-    //Printf -> Comando para ser impresso na tela e scanf para ler dados do teclado e atribui as variaveis.
+    printf("codigo da carta: \n");
+    getc(stdin);
+    getc(stdin);
+    scanf(" %d\n", &codigo);
 
-    printf("Codigo do estado da carta: \n"); 
-    scanf( " %d\n", &codigo);
+    printf( "Nome estado: \n");
+    scanf( "%s\n", &estado);
 
-    printf("Numeração da carta: \n");
-    scanf( "%d\n", &numero); //Aqui tive que dar espaço entre parenteses e aspas pois estava dando erro de espaçamento.
+    printf( "Nome cidade: \n");
+    scanf( "%s\n", &nome );
 
-    printf("Nome estado: \n");
-    scanf( "%s\n", &nome);
+    printf( "Pib da cidade: \n");
+    scanf( "%c\n", &pib);
 
-    printf("Nome cidade: \n");
-    scanf( "%s\n", &nome);
+    printf( "Área da cidade: \n");
+    scanf( "%c\n", &area );
 
-    printf("Pib da cidade: \n");
-    scanf("%c\n", &pib);
-
-    printf("Área da cidade: \n");
-    scanf("%c\n", &area);
-
-    printf("Numero de pontos turisticos: \n");
-    scanf("%c\n ", &pontos_turisticos);
-
-    printf("Codigo do estado da carta: %d\n", &codigo);
-    printf("Numeração da carta: %d\n", &numero);
-    printf("Nome estado: %s\n",&nome);
-    printf("Nome cidade: %s\n", &nome);
-    printf("Pib da cidade: %c\n", &pib);
-    printf("Área da cidade: %c\n", &area);
-    printf("Numero de pontos turisticos: %c\n", &pontos_turisticos);
-
+    printf( "Numero de pontos turisticos: \n");
+    scanf("     %d\n ", &pontos_turisticos);
     return 0;
 
 
