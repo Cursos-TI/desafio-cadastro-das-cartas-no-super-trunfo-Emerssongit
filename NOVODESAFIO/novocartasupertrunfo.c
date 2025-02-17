@@ -22,13 +22,13 @@ int main() {
     scanf("%s", nome);
 
     printf("População da cidade: ");
-    scanf(" %f", &populacao);
+    scanf(" %f[^\n]", &populacao); //Usei fgets para ler a strings, resolvendo problema de pular linhas.
 
     printf("Área da cidade (km2): ");
     scanf("%f", &area);
 
     printf("PIB da cidade: ");
-    scanf("%f");
+    scanf("%f", &pib);
 
     printf("Número de pontos turísticos: ");
     scanf("%f", &pontos_turisticos);
