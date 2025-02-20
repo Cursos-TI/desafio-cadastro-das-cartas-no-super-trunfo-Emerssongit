@@ -7,7 +7,7 @@ int main() {
     char estado[90]; // Variavel com nome estado.
     char codigo[5];  // Variavel com codigo carta.
     char cidade[90]; // Variavel com nome da cidade.
-    float populacao; // Variavel com número da população.
+    int populacao; // Variavel com número da população.
     float area; // variavel, área da cidade.
     float pib;  // variavel, PIB da cidade.
     int numero; // Variavel com número de pontos turisticos.
@@ -27,7 +27,7 @@ int main() {
     scanf(" %s", cidade);
 
     printf("População: ");
-    scanf(" %f", &populacao);
+    scanf(" %i", &populacao);
 
     printf("Área km²: ");
     scanf(" %f", &area);
@@ -43,11 +43,11 @@ int main() {
     printf("\nCodigo: 1\n");
     printf("Estado: %s\n", estado);
     printf("Codigo da carta: %s\n", codigo);
-    printf("Nome da cidade: %s\n", &cidade);
-    printf("População: %f\n", &populacao);
-    printf("Área km²: %f\n", &area);
-    printf("PIB: %f\n", &pib);
-    printf("Número de Pontos Turísticos: %d\n", &numero);
+    printf("Nome da cidade: %s\n", cidade);
+    printf("População: %d\n", populacao);
+    printf("Área km²: %f\n", area);
+    printf("PIB: %f\n", pib);
+    printf("Número de Pontos Turísticos: %i\n", numero);
 
     // Leitura e caputra de dados das cartas.
 
@@ -62,7 +62,7 @@ int main() {
     scanf(" %s", cidade);
 
     printf("População: ");
-    scanf(" %f", &populacao);
+    scanf(" %d", &populacao);
 
     printf("Área km²: ");
     scanf(" %f", &area);
@@ -71,7 +71,7 @@ int main() {
     scanf(" %f", &pib);
 
     printf("Número de Pontos Turísticos: ");
-    scanf(" %d", &numero);
+    scanf(" %i", &numero);
 
     // Leitura de dados cadastrados pelo usuarios.
 
@@ -79,10 +79,10 @@ int main() {
     printf("Estado: %s\n", estado);
     printf("Codigo da carta: %s\n", codigo);
     printf("Nome da cidade: %s\n", cidade);
-    printf("População: %f\n", &populacao);
-    printf("Área: %f\n", &area);
-    printf("PIB: %f\n", &pib);
-    printf("Número de Pontos Turísticos: %d\n", &numero);
+    printf("População: %f\n", populacao);
+    printf("Área: %f\n", area);
+    printf("PIB: %f\n", pib);
+    printf("Número de Pontos Turísticos: %d\n", numero);
 
     return 0;
 }
