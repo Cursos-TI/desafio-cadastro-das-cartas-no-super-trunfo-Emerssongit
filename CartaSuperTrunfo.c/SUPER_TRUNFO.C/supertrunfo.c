@@ -15,7 +15,7 @@ int main() {
     // Leitura e caputra de dados das cartas.
 
     printf("Codigo: 1\n");
-    printf("Estado: ");
+    printf("De 'A' a 'H' digite a letra de um estado: ");
     scanf(" %s", estado); 
 
     printf("Codigo da carta: ");
@@ -50,7 +50,7 @@ int main() {
     // Leitura e caputra de dados das cartas.
 
     printf("\nCarta: 2\n");
-    printf("Estado: ");
+    printf("De 'A' a 'H' digite a letra de um estado: ");
     scanf(" %s", estado2);
 
     printf("Codigo da carta: ");
